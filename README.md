@@ -28,3 +28,20 @@ Captures d'écran de l'exécution
 <img src="https://raw.githubusercontent.com/aizili3449/DB_LAB2/main/DB_LAB2_Bibliotheque/screenshots/06_sample_data/sample_data.png" />7. Tests SQL
 
 <img src="https://raw.githubusercontent.com/aizili3449/DB_LAB2/main/DB_LAB2_Bibliotheque/screenshots/07_tests/tests.png" />
+
+
+
+Fichier Schema
+
+Le fichier "lab2_schema.sql" permet de créer toute la structure de la base de données en une seule exécution.
+
+Il contient :
+
+- La création de la base de données.
+- La création des quatre tables.
+- Les clés primaires et étrangères.
+- Les contraintes.
+- Les index.
+- Les triggers.
+
+"Consulter le fichier lab2_schema.sql" (sql/lab2_schema.sql)
