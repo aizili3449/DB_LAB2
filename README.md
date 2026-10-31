@@ -39,22 +39,22 @@ Schema complet
 Scripts SQL détaillés
 
 — Création de la base de données.
-1. "01_database.sql" (https://github.com/aizili3449/DB_LAB2/blob/main/DB_LAB2_Bibliotheque/sql/01_database.sql)
+ "01_database.sql" (https://github.com/aizili3449/DB_LAB2/blob/main/DB_LAB2_Bibliotheque/sql/01_database.sql)
 
 — Création des tables.
-3. "02_tables.sql" (https://github.com/aizili3449/DB_LAB2/blob/main/DB_LAB2_Bibliotheque/sql/02_tables.sql)
+ "02_tables.sql" (https://github.com/aizili3449/DB_LAB2/blob/main/DB_LAB2_Bibliotheque/sql/02_tables.sql)
 
 — Définition des contraintes.
-5. "03_constraints.sql" (https://github.com/aizili3449/DB_LAB2/blob/main/DB_LAB2_Bibliotheque/sql/03_constraints.sql) 
+"03_constraints.sql" (https://github.com/aizili3449/DB_LAB2/blob/main/DB_LAB2_Bibliotheque/sql/03_constraints.sql) 
 
 — Création des index.
-6. "04_indexes.sql" (https://github.com/aizili3449/DB_LAB2/blob/main/DB_LAB2_Bibliotheque/sql/04_indexes.sql) 
+"04_indexes.sql" (https://github.com/aizili3449/DB_LAB2/blob/main/DB_LAB2_Bibliotheque/sql/04_indexes.sql) 
 
 — Création des triggers.
-7. "05_triggers.sql" (https://github.com/aizili3449/DB_LAB2/blob/main/DB_LAB2_Bibliotheque/sql/05_triggers.sql)
+ "05_triggers.sql" (https://github.com/aizili3449/DB_LAB2/blob/main/DB_LAB2_Bibliotheque/sql/05_triggers.sql)
 
 — Insertion des données de test.
-8. "06_sample_data.sql" (https://github.com/aizili3449/DB_LAB2/blob/main/DB_LAB2_Bibliotheque/sql/06_sample_data.sql) 
+ "06_sample_data.sql" (https://github.com/aizili3449/DB_LAB2/blob/main/DB_LAB2_Bibliotheque/sql/06_sample_data.sql) 
 
 — Tests de la base de données.
-9. "07_tests.sql" (https://github.com/aizili3449/DB_LAB2/blob/main/DB_LAB2_Bibliotheque/sql/07_tests.sql) 
+ "07_tests.sql" (https://github.com/aizili3449/DB_LAB2/blob/main/DB_LAB2_Bibliotheque/sql/07_tests.sql) 
