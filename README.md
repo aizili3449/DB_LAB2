@@ -43,4 +43,4 @@ Il contient :
 - Les index.
 - Les triggers.
 [📄 Voir lab2_schema.sql](https://github.com/aizili3449/DB_LAB2/blob/main/DB_LAB2_Bibliotheque/sql/lab2_schema.sql)
-[📄 Télécharger lab2_schema.sql](sql/lab2_schema.sql)
+[📄 Consulter le fichier lab2_schema.sql](https://github.com/aizili3449/DB_LAB2/blob/main/DB_LAB2_Bibliotheque/sql/lab2_schema.sql)
