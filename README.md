@@ -1,6 +1,6 @@
 2. Création des tables
 
-"Tables" (https://raw.githubusercontent.com/aizili3449/DB_LAB2/main/DB_LAB2_Bibliotheque/screenshots/02_tables/tables.png)
+![Tables](https://raw.githubusercontent.com/aizili3449/DB_LAB2/main/DB_LAB2_Bibliotheque/screenshots/02_tables/tables.png)
 
 3. Contraintes d'intégrité
 
