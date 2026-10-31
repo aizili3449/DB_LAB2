@@ -1,7 +1,6 @@
 
 Fichiers SQL
 Les scripts SQL sont disponibles dans le dossier `sql`.
-
 Les fichiers sont organisés selon l'ordre d'exécution :
 1. Création de la base de données.
 2. Création des tables.
