@@ -1,10 +1,4 @@
--- =========================================================
--- LAB 2 - Schema de la bibliotheque scolaire
--- SGBD : MySQL 8.0.16+
--- Ce fichier cree la base, les tables, les contraintes,
--- les index et les triggers.
--- Les donnees de test sont dans 06_sample_data.sql.
--- =========================================================
+
 
 CREATE DATABASE IF NOT EXISTS bibliotheque
     CHARACTER SET utf8mb4
@@ -12,19 +6,6 @@ CREATE DATABASE IF NOT EXISTS bibliotheque
 
 USE bibliotheque;
 
--- ---------------------------------------------------------
--- 1. Suppression des tables (ordre necessaire a cause des FK)
---    Decommentez ces lignes uniquement pour reconstruire
---    completement le schema depuis zero.
--- ---------------------------------------------------------
--- DROP TABLE IF EXISTS emprunt;
--- DROP TABLE IF EXISTS ouvrage;
--- DROP TABLE IF EXISTS abonne;
--- DROP TABLE IF EXISTS auteur;
-
--- ---------------------------------------------------------
--- 2. Table auteur
--- ---------------------------------------------------------
 CREATE TABLE IF NOT EXISTS auteur (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nom VARCHAR(100) NOT NULL,
@@ -32,10 +13,6 @@ CREATE TABLE IF NOT EXISTS auteur (
     date_naissance DATE NULL,
     CONSTRAINT chk_auteur_nom CHECK (LENGTH(nom) > 0)
 ) ENGINE=InnoDB;
-
--- ---------------------------------------------------------
--- 3. Table ouvrage
--- ---------------------------------------------------------
 CREATE TABLE IF NOT EXISTS ouvrage (
     id INT AUTO_INCREMENT PRIMARY KEY,
     titre VARCHAR(255) NOT NULL,
@@ -50,10 +27,6 @@ CREATE TABLE IF NOT EXISTS ouvrage (
         ON UPDATE CASCADE
         ON DELETE RESTRICT
 ) ENGINE=InnoDB;
-
--- ---------------------------------------------------------
--- 4. Table abonne
--- ---------------------------------------------------------
 CREATE TABLE IF NOT EXISTS abonne (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nom VARCHAR(100) NOT NULL,
@@ -66,9 +39,6 @@ CREATE TABLE IF NOT EXISTS abonne (
     CONSTRAINT chk_abonne_email CHECK (email LIKE '%@%.%')
 ) ENGINE=InnoDB;
 
--- ---------------------------------------------------------
--- 5. Table emprunt
--- ---------------------------------------------------------
 CREATE TABLE IF NOT EXISTS emprunt (
     ouvrage_id INT NOT NULL,
     abonne_id INT NOT NULL,
@@ -89,18 +59,14 @@ CREATE TABLE IF NOT EXISTS emprunt (
         ON DELETE RESTRICT
 ) ENGINE=InnoDB;
 
--- ---------------------------------------------------------
--- 6. Index
--- ---------------------------------------------------------
+
 CREATE INDEX idx_ouvrage_disponible
     ON ouvrage(disponible);
 
 CREATE INDEX idx_emprunt_date_fin
     ON emprunt(date_fin);
 
--- ---------------------------------------------------------
--- 7. Triggers
--- ---------------------------------------------------------
+
 DELIMITER //
 
 CREATE TRIGGER trg_emprunt_before_insert
@@ -137,7 +103,3 @@ BEGIN
 END//
 
 DELIMITER ;
-
--- Fin du schema.
--- Pour ajouter les donnees de demonstration, executer ensuite
--- le fichier 06_sample_data.sql.
