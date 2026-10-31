@@ -2,7 +2,7 @@ Captures d'écran de l'exécution
 
 1. Création de la base de données
 
-"Database" (screenshots/01_database/database.png)
+![Création de la base de données](./screenshots/01_database/database.png)
 
 2. Création des tables
 
